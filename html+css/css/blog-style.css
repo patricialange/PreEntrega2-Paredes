@@ -1,0 +1,30 @@
+*{
+    background-color: black;
+    font-family: 'Aboreto', normal;
+    color: yellow;
+}
+ul {
+    list-style-type: none;
+}
+.menu{
+    text-align: center;
+    font-size: 35px;
+    position: fixed;
+    display: flex; flex-direction: row;
+    justify-content: space-evenly;
+}
+.postsa{
+    display: flex; flex-direction: row;
+    align-content: center;
+}
+.postsb{
+    display: flex; flex-direction: row;
+}
+.redes{
+    text-align: center;
+    display: flex, flex-direction: row;
+}
+.newsletter{
+    line-height: 1.6;
+    text-align: center;
+}

@@ -1,0 +1,143 @@
+* {
+    background-color: black;
+    font-family: 'Aboreto', normal;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    min-height: 100vh;
+}
+
+header {
+    width: 80%;
+    position: sticky;
+    top: 0;    
+    z-index: 111;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+}
+
+.menu{
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 40px;
+    margin: 20px 0;
+}
+
+a, p, h2 {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: color 1s;
+}
+
+.container {
+    max-width: 80%;
+}
+
+.imagenCentral {
+    width: inherit;
+    height: 60vh;
+    background-image: url(../img/inicio.jpg);
+    margin: 20px 0;
+}
+
+.bio, .sesiones{
+    display: flex;
+}
+
+.bio div {
+    width: 50%;
+    height: 80vh;
+    margin: 10px;
+}
+
+.bio .bio-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+.bio .bio-img {
+    background-image: url(../img/bio.jpg);
+    background-size: cover;
+    background-position-x: 25%;
+}
+
+.bio .bio-buttons{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    height: auto;
+}
+
+.bio button {
+    border: 1px yellow solid;
+    padding: 8px 10px;
+}
+
+.sesiones {
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.sesiones .calendly-inline-widget{
+    height: 600px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes{
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.redes a {
+    margin: 0 20px;
+}
+
+.newsletter{
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    
+  
+    .fa-solid.fa-bars {
+        display: block;
+        text-align: right;
+        color: yellow;
+        margin: 40px 15px;
+    }
+    menu {
+    max-width: 70%;
+    }
+  }
