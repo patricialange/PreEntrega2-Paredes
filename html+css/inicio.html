@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
     <!-- Hoja de estilo -->
-    <link rel="stylesheet" href="css/styles.css"/> 
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
@@ -15,52 +20,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASTRO.SUBVERSIVA</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <ul class="menu">
-                    <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="sesiones.html">Sesiones</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </div>    
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="sesiones.html">Sesiones</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            </div>
         </nav>
     </header>
     <div class="container">
-        <div class="imagenCentral"></div>
-        <section class="bio">
-            <div class="bio-text">
+        <div class="imagenCentral animate__backInLeft animate__animated"></div>
+        <section class="bio animate__backInRight animate__animated">
+            <div>
                 <h2>¿Quién soy?</h2>
-                <p>Hola, soy Patricia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maxime et adipisci voluptatum esse possimus accusamus temporibus iure suscipit labore minus consequuntur quisquam, culpa veniam cupiditate similique, obcaecati perspiciatis dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                <br>          
-                Voluptates repellat magni quasi animi. Laudantium similique illum ducimus rerum accusamus eum reiciendis, optio sapiente amet possimus? Perferendis, sed molestiae. Doloremque, fuga?
-                <br>                    
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nesciunt porro debitis distinctio in quo doloremque eveniet deserunt quod impedit quia est laborum voluptates neque quae alias, sint nihil accusamus!</p>
+                <p class="bio-text">Hola, soy Patricia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat et itaque
+                    quaerat praesentium magni assumenda laudantium tempore animi aliquam? Aliquam minima neque
+                    dignissimos aut esse doloribus suscipit illum doloremque!</p>
                 <div class="bio-buttons">
                     <button><a href="sesiones.html">Sesiones</a></button>
                     <button><a href="cursos.html">Cursos</a></button>
                 </div>
             </div>
-            <div class="bio-img">
+            <div class = "bio-img">
+                <p id="my-image"><img src="img/bio.jpg">
+                </p>
             </div>
         </section>
         <section class="sesiones">
             <div class="sesiones-text">
                 <h2>Sesiones</h2>
-                <p>¿Cómo es una sesión? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat et itaque quaerat praesentium magni assumenda laudantium tempore animi aliquam? Aliquam minima neque dignissimos aut esse doloribus suscipit illum doloremque!</p>
+                <p>¿Cómo es una sesión? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat et itaque
+                    quaerat praesentium magni assumenda laudantium tempore animi aliquam? Aliquam minima neque
+                    dignissimos aut esse doloribus suscipit illum doloremque!</p>
             </div>
             <div class="sesiones-calendar">
                 <!-- Principio del widget integrado de Calendly -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/astro_subversiva/cartanatal?hide_event_type_details=1&hide_gdpr_banner=1"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/astro_subversiva/cartanatal?hide_event_type_details=1&hide_gdpr_banner=1">
+                </div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
                 <!-- Final del widget integrado de Calendly -->
             </div>
         </section>
@@ -71,14 +76,15 @@
             <a href="https://twitch.tv/astro_subversiva"><img src="twitch.jpg" alt="twitch"></a>
             <a href="https://wa.me/541536575047"><img src="whatsapp.jpg" alt="whatsapp"></a>
         </div>
-         <!-- <div class="newsletter">
+        <!-- <div class="newsletter">
            <form>
                     <div class="newsletter">
                         <input type="text" id="mail" placeholder="Ingresá tu mail">
                         <input type="submit" value="Suscribite"> 
                     </div>
             </form> 
-        </div>   --> 
+        </div>   -->
     </footer>
 </body>
+
 </html>
